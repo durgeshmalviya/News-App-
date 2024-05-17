@@ -146,7 +146,7 @@ const News1 = () => {
     </marquee></Box>
       <Container maxWidth="xl" sx={{ background: '#fdfdfd' }} className=''>
         <Container maxWidth='lg' component='div' className='shadow-lg'><Review /></Container>
-        <Container maxWidth='xl' style={{ padding: '100px', background: '#fdfdfd' }}>
+        <Container maxWidth='xl' style={{ padding: '10px', background: '#fdfdfd' }}>
           <Grid container spacing={2}>
             {data1.map((article, index) => (
               <Grid item xs={12} sm={12} key={index}>
@@ -183,7 +183,7 @@ const News1 = () => {
           </Grid>
         </Container>
         <Health />
-        <Container maxWidth='lg' style={{ padding: '100px', background: '#fdfdfd' }}>
+        <Container maxWidth='lg' style={{ padding: '10px', background: '#fdfdfd' }}>
           <Grid container spacing={2}>
             {data2.map((article, index) => (
               <Grid item xs={12} sm={12} key={index}>
