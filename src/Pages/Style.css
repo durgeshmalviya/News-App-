@@ -1,0 +1,67 @@
+.card1 {
+
+    animation: easeInAnimation 1s ease-in;
+    animation-fill-mode: forwards;
+   
+  }
+  
+  @keyframes easeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .card2 {
+
+    animation: easeInAnimation 1s alternate;
+    animation-fill-mode: forwards;
+   
+  }
+  
+  @keyframes easeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .card3 {
+    animation: easeInAnimation 1s cubic-bezier(0.165, 0.84, 0.44, 1), popupAnimation 1s ease-in-out 1s forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes easeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes popupAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
